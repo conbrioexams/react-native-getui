@@ -21,6 +21,6 @@ public class MainActivity extends ReactActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        GetuiModule.initPush(this);
+        // GetuiModule.initPush(this);
     }
 }

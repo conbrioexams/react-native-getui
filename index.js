@@ -47,7 +47,9 @@ export default class Getui {
 	 * 初始化推送服务
      */
     static initPush(){
-    	GetuiModule.initPush();
+			if (Platform.OS === 'android') {
+				GetuiModule.initPush();
+			}
 	}
 	/**
 	 *  销毁SDK，并且释放资源
