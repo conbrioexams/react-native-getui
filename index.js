@@ -46,9 +46,9 @@ export default class Getui {
     /**
 	 * 初始化推送服务
      */
-    static initPush(){
+    static async initPush(){
 			if (Platform.OS === 'android') {
-				GetuiModule.initPush();
+				await GetuiModule.initPush();
 			}
 	}
 	/**
